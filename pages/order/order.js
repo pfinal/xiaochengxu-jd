@@ -57,7 +57,7 @@ Page({
         var _this = this;
        
         wx.request({
-          url: app.apiBaseUrl + 'order/comfirm/'+orderId,
+          url: app.apiBaseUrl + 'order/confirm/'+orderId,
           data: {},
           method: 'POST', 
           success: function(res){
