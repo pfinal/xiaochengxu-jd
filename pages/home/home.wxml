@@ -1,0 +1,48 @@
+<!--order.wxml-->
+
+
+<view class="top">
+  <image class="vip" src="../../images/vip.png"></image>
+  <image class="avater" src="../../images/avater.png"></image>
+  <view class="info">
+    <view>邹义良</view>
+    <view class="account">帐号: 12345678-98765</view>
+  </view>
+  <view class="clear"></view>
+</view>
+
+<view class="list">
+  <view class="list-item" bindtap="tapOrder">
+    <image mode="aspectFit" class="icon" src="../../images/order.png"></image>
+      全部订单
+    <image  mode="aspectFit"  class="icon more" src="../../images/more.png"></image>
+  </view>
+
+  <view class="list-item">
+    <image mode="aspectFit" class="icon" src="../../images/bag.png"></image>
+      待付款
+    <image  mode="aspectFit"  class="icon more" src="../../images/more.png"></image>
+  </view>
+
+  <view class="list-item">
+    <image mode="aspectFit" class="icon" src="../../images/car.png"></image>
+      待收货
+    <image  mode="aspectFit"  class="icon more" src="../../images/more.png"></image>
+  </view>
+
+  <view class="list-item">
+    <image mode="aspectFit" class="icon" src="../../images/service.png"></image>
+      售后服务
+    <image  mode="aspectFit"  class="icon more" src="../../images/more.png"></image>
+  </view>
+
+</view>
+
+
+<view class="list">
+  <view class="list-item">
+    <image mode="aspectFit" class="icon" src="../../images/ticket-icon.png"></image>
+      优惠券
+    <image  mode="aspectFit"  class="icon more" src="../../images/more.png"></image>
+  </view>
+</view>

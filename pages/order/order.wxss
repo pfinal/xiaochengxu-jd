@@ -1,0 +1,74 @@
+
+/* 小程序界面顶级是page */
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #F1F0F8;  
+}  
+
+.flex-wrp {
+    display: flex;
+}
+
+.flex-item {
+    text-align: center;
+    width: 33%;
+    line-height: 90rpx;
+    height: 90rpx;
+    font-size:28rpx;
+}
+.tab{
+    background-color: #fff;
+}
+
+.order-list{
+    font-size: 28rpx;
+    background-color: #fff;
+}
+
+.flex-item{
+    border-bottom:1rpx solid #ccc;
+}
+.active{
+    color:orangered;
+    border-bottom:4rpx solid orangered;
+}
+.status{
+    margin-left:20rpx;
+    padding-top:20rpx;
+    line-height: 50rpx;
+    position: relative;
+}
+
+.btn{
+    position: absolute;
+    top:30rpx;
+    right:20rpx;
+}
+
+.red{
+    color:#E64340;
+}
+
+.product-item{
+    margin-top:20rpx;
+    border-top:1rpx solid #ccc;
+    border-bottom:20rpx solid #F1F0F8;
+    overflow: hidden;
+}
+.product{
+    width:160rpx;
+    height:160rpx;
+    float:left;
+}
+
+.info{
+    margin:20rpx;
+    float:left;
+    width:540rpx;
+    line-height: 50rpx;
+}
+
+.count{
+    color:#aaa;
+}

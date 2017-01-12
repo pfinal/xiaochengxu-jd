@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="top">
+    <image class="logo" src="../../images/logo.png"></image>
+    <view class="search">
+        <image class="icon" src="../../images/search.png"></image>搜索京东商品
+    </view>
+</view>
+
+<view class="ticket-list">
+    <view class="title">发现京东好券</view>
+
+    <view class="ticket-item">
+        <view class="money">￥5</view>
+        <view class="condition">
+            <image class="ticket-icon" src="../../images/ticket.png"></image>
+            <view>满100可用</view>
+        </view>
+        <view class="clear"></view>
+        <view class="desc">全品类(特殊商品除外)</view>
+    </view>
+
+    <view class="ticket-item">
+        <view class="money">￥5</view>
+        <view class="condition">
+            <image class="ticket-icon" src="../../images/ticket.png"></image>
+            <view>满100可用</view>
+        </view>
+        <view class="clear"></view>
+        <view class="desc">全品类(特殊商品除外)</view>
+    </view>
+
+
+    <view class="ticket-item">
+        <view class="money">￥5</view>
+        <view class="condition">
+            <image class="ticket-icon" src="../../images/ticket.png"></image>
+            <view>满100可用</view>
+        </view>
+        <view class="clear"></view>
+        <view class="desc">全品类(特殊商品除外)</view>
+    </view>
+
+    <view class="ticket-item">
+        <view class="money">￥5</view>
+        <view class="condition">
+            <image class="ticket-icon" src="../../images/ticket.png"></image>
+            <view>满100可用</view>
+        </view>
+        <view class="clear"></view>
+        <view class="desc">全品类(特殊商品除外)</view>
+    </view>
+
+</view>

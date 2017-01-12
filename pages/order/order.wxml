@@ -1,0 +1,55 @@
+
+<view class="tab flex-wrp">
+    <view data-type="all" bindtap="tapOrderList" class="flex-item {{tabSelect.all}}">我的订单</view>
+    <view data-type="pay"  bindtap="tapOrderList" class="flex-item {{tabSelect.pay}}">待付款</view>
+    <view data-type="take"  bindtap="tapOrderList" class="flex-item {{tabSelect.take}}">待收货</view>
+</view>
+
+<view class="order-list">
+
+    <view class="order-item">
+        <view class="status">
+            <view>
+                <view>状态: <text class="red">配送中</text></view>
+                <view>总价: ￥2899.00元</view>
+            </view>
+            <button class="btn" type="warn" size="mini" >确认收货</button>
+        </view>
+        
+       <view class="product-item">
+            <image class="product" src="../../images/produt.png"></image>
+            <view class="info">
+                <view>商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
+                <view class="count">1件</view>                
+            </view>
+       </view>
+    </view>
+
+
+     <view class="order-item">
+        <view class="status">
+            <view>状态: 已签收</view>
+            <view>总价: ￥5798.00元</view>
+        </view>
+        
+       <view class="product-item">
+            <image class="product" src="../../images/produt.png"></image>
+            <view class="info">
+                <view>商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
+                <view class="count">1件</view>                
+            </view>
+       </view>
+
+         <view class="product-item">
+            <image class="product" src="../../images/produt.png"></image>
+            <view class="info">
+                <view>商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
+                <view class="count">1件</view>                
+            </view>
+       </view>
+    </view>
+
+
+
+</view>
+

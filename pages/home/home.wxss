@@ -1,0 +1,74 @@
+
+/* 小程序界面顶级是page */
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #F1F0F8;  
+}  
+
+.list{
+  background-color: #fff;
+  margin-bottom:20rpx;
+}
+
+.clear{
+  clear:both;
+}
+
+.top{
+  background-color: #E15154;
+  position: relative;
+}
+
+.vip{
+  position: absolute;
+  top:117rpx;
+  left:26rpx;
+  width:130rpx;
+  height:30rpx;
+}
+
+.avater{
+  width:100rpx;
+  height:100rpx;
+  border-radius:100%;
+  margin-left:40rpx;
+  float:left;
+  margin:40rpx;
+}
+
+.info{
+  float:left;
+  margin-top:50rpx;
+  color:#eee;
+  font-size:28rpx;
+}
+
+.account{
+  color:#EDA2A3;
+  margin-top:20rpx;
+}
+
+.icon{
+  width:40rpx;
+  height:40rpx;
+  vertical-align: middle;
+  margin-right:20rpx;
+}
+
+.more{
+  float:right;
+  margin:24rpx;
+}
+
+.list-item{
+  color:#666;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  border-bottom:1px solid #ccc;
+  margin-left:20rpx;
+}
+
+.list-item:last-child{
+  border-bottom:none;
+}
