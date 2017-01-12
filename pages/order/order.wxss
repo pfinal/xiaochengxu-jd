@@ -60,15 +60,23 @@ page {
     width:160rpx;
     height:160rpx;
     float:left;
+    margin:10rpx;
 }
 
 .info{
     margin:20rpx;
     float:left;
-    width:540rpx;
+    width:520rpx;
     line-height: 50rpx;
 }
 
 .count{
     color:#aaa;
+}
+
+.empty{
+    margin-top:40rpx;
+    font-size:28rpx;
+    color:#666;
+    text-align: center;
 }

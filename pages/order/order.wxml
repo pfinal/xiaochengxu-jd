@@ -7,49 +7,29 @@
 
 <view class="order-list">
 
-    <view class="order-item">
-        <view class="status">
-            <view>
-                <view>状态: <text class="red">配送中</text></view>
-                <view>总价: ￥2899.00元</view>
+    <block wx:for="{{orderList}}">
+        <view class="order-item">
+            <view class="status">
+                <view>
+                    <view>状态: <text class="{{item.status=='配送中'?'red':''}}">{{item.status}}</text></view>
+                    <view>总价: ￥{{item.money}}元</view>
+                </view>
+                <button bindtap="comfirmOrder" data-orderid="{{item.id}}" wx:if="{{item.status=='配送中'}}"  class="btn" type="warn" size="mini" >确认收货</button>
             </view>
-            <button class="btn" type="warn" size="mini" >确认收货</button>
-        </view>
         
-       <view class="product-item">
-            <image class="product" src="../../images/produt.png"></image>
-            <view class="info">
-                <view>商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
-                <view class="count">1件</view>                
-            </view>
-       </view>
-    </view>
+            <block wx:for="{{item.items}}" wx:for-item="detail">
+                <view class="product-item">
+                        <image class="product" src="{{detail.image}}"></image>
+                        <view class="info">
+                            <view>{{detail.name}}</view>
+                            <view class="count">{{detail.qty}}件</view> 
+                        </view>
+                </view> 
+            </block>
 
-
-     <view class="order-item">
-        <view class="status">
-            <view>状态: 已签收</view>
-            <view>总价: ￥5798.00元</view>
         </view>
-        
-       <view class="product-item">
-            <image class="product" src="../../images/produt.png"></image>
-            <view class="info">
-                <view>商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
-                <view class="count">1件</view>                
-            </view>
-       </view>
-
-         <view class="product-item">
-            <image class="product" src="../../images/produt.png"></image>
-            <view class="info">
-                <view>商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
-                <view class="count">1件</view>                
-            </view>
-       </view>
-    </view>
-
-
+    </block>
 
 </view>
 
+<view wx:if="{{ orderList.length == 0 }}" class="empty">暂无数据</view>

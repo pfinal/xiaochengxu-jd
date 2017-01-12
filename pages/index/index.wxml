@@ -9,45 +9,16 @@
 <view class="ticket-list">
     <view class="title">发现京东好券</view>
 
-    <view class="ticket-item">
-        <view class="money">￥5</view>
-        <view class="condition">
-            <image class="ticket-icon" src="../../images/ticket.png"></image>
-            <view>满100可用</view>
+    <block wx:for="{{ticketList}}">
+        <view class="ticket-item">
+            <view class="money">￥{{item.money}}</view>
+            <view class="condition">
+                <image class="ticket-icon" src="../../images/ticket.png"></image>
+                <view>{{item.least}}</view>
+            </view>
+            <view class="clear"></view>
+            <view class="desc">{{item.desc}}</view>
         </view>
-        <view class="clear"></view>
-        <view class="desc">全品类(特殊商品除外)</view>
-    </view>
-
-    <view class="ticket-item">
-        <view class="money">￥5</view>
-        <view class="condition">
-            <image class="ticket-icon" src="../../images/ticket.png"></image>
-            <view>满100可用</view>
-        </view>
-        <view class="clear"></view>
-        <view class="desc">全品类(特殊商品除外)</view>
-    </view>
-
-
-    <view class="ticket-item">
-        <view class="money">￥5</view>
-        <view class="condition">
-            <image class="ticket-icon" src="../../images/ticket.png"></image>
-            <view>满100可用</view>
-        </view>
-        <view class="clear"></view>
-        <view class="desc">全品类(特殊商品除外)</view>
-    </view>
-
-    <view class="ticket-item">
-        <view class="money">￥5</view>
-        <view class="condition">
-            <image class="ticket-icon" src="../../images/ticket.png"></image>
-            <view>满100可用</view>
-        </view>
-        <view class="clear"></view>
-        <view class="desc">全品类(特殊商品除外)</view>
-    </view>
+    </block>
 
 </view>
